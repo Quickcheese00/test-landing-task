@@ -1,5 +1,7 @@
 # Set up project
 
+node version was 16 on this project
+
 `npm i`
 
 # Run project
