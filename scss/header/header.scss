@@ -1,0 +1,36 @@
+.header {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  &__link {
+    &-logo {
+      width: 159px;
+      height: 80px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__button {
+    border: 2px solid #2dafd7;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2dafd7;
+    width: 250px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 5px;
+    font-family: $rubik;
+  }
+}

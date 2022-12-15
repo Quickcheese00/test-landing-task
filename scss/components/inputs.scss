@@ -1,0 +1,66 @@
+.form-element {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-width: min(100%, 380px);
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  &__svg {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #99BBC6;
+    width: 24px;
+  }
+
+  &__input {
+    padding-left: 50px;
+    min-height: 60px;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #99BBC6;
+    box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    min-width: min(100%, 380px);
+    min-height: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #2dafcd;
+    box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 300ms all ease;
+    font-family: $rubik;
+
+    &:hover {
+      background: lighten(#2dafcd, 15%);
+    }
+  }
+}

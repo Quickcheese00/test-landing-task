@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "metric-medium";
+  src: url("/fonts/metric-medium.ttf");
+}
+@font-face {
+  font-family: "metric-regular";
+  src: url("/fonts/metric-regular.ttf");
+}
+@font-face {
+  font-family: "metric-semibold";
+  src: url("/fonts/metric-semibold.ttf");
+}
+$metric-medium: "metric-medium", sans-serif;
+$metric-regular: "metric-regular", sans-serif;
+$metric-semibold: "metric-semibold", sans-serif;
+
+$rubik: "Rubik", sans-serif;
+$poppins: "Poppins", sans-serif;
+
+$wrapper-width: 1140px;
+
+$red: #e4002b;
+$white: #ffffff;
+$black: #1d1d1d;

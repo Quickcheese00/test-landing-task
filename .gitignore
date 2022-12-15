@@ -1,0 +1,7 @@
+dist
+.idea
+.DS_Store
+node_modules
+hot
+mix-manifest.json
+leads.txt

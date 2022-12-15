@@ -1,0 +1,138 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    text-transform: uppercase;
+    line-height: 1.23;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: $rubik;
+    color: #195b84;
+    max-width: 700px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      box-sizing: border-box;
+      padding: 0 15px;
+      font-size: 30px;
+      max-width: 100%;
+    }
+  }
+}
+
+.main-section-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+
+  &__image {
+    object-fit: contain;
+
+    @media (max-width: 1023px) {
+      max-width: 390px;
+    }
+  }
+
+  &__list {
+    margin: 106px 14px 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+
+    @media (max-width: 1023px) {
+      order: 2;
+      margin: 20px 0 0;
+      gap: 20px;
+      align-items: center;
+
+      &:last-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__list-item {
+    max-width: 390px;
+    min-height: 180px;
+    box-sizing: border-box;
+    background: #f4f9ff;
+    box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+    border-radius: 5px;
+    padding: 24px 65px 24px 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: -3px;
+      top: 2px;
+      bottom: -1px;
+      width: 1px;
+      background-color: #2dafd7;
+
+      @media (max-width: 1023px) {
+        left: 0;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      padding: 24px 20px;
+    }
+
+    @media (max-width: 1439px) {
+      padding: 24px 35px;
+    }
+
+    &--is-right {
+      &::after {
+        left: -3px;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      &--is-right {
+        &::after {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__list-item-title {
+    margin: 0;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.23;
+    color: #2dafd7;
+    letter-spacing: 0.07em;
+  }
+
+  &__list-item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.23;
+    font-family: $poppins;
+    color: #195b84;
+    letter-spacing: 0.06em;
+    margin-top: 19px;
+    display: block;
+  }
+}
